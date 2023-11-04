@@ -683,8 +683,17 @@ ul, li{
     .gallery li{padding:0;margin:0 0 6px 0;}
     .docs{
         width: calc(100vw - 64px);
-        height: calc(100vh - 74px);
+        height: calc(100vh - 100px);
     }
+
+
+
+.textBg{
+    width: 110vw;
+    height: 110vh;
+
+}
+
     .docsNav{
         height: 60px;
     }

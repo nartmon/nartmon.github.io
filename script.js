@@ -97,6 +97,8 @@ docsNav.addEventListener("click", function(event) {
     docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
     docs.style.backgroundColor = "#F4F0E9"
     docsNav.style.backgroundColor = "#F4F0E9"
+    document.body.style.overflow = 'auto';
+
 
 
     setTimeout(function() {
@@ -126,6 +128,8 @@ textBg.addEventListener("click", function(event) {
     docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
     docs.style.backgroundColor = "#F4F0E9"
     docsNav.style.backgroundColor = "#F4F0E9"
+    document.body.style.overflow = 'auto';
+
 
 
     setTimeout(function() {
@@ -175,7 +179,8 @@ listItems.forEach(function(item, index) {
         textBg.classList.remove("opacity-down");
 
         audios[Math.floor(Math.random() * audios.length)].play();
-        console.log(audio)
+        console.log(audio);
+        document.body.style.overflow = 'hidden';
 
         setTimeout(function() {
         docs.style.display = "flex"
