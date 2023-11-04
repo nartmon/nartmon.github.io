@@ -7,6 +7,7 @@ body{
     --margin: 60px ;
     cursor: url('./src/aim3.png') 40 40, auto;
     -ms-overflow-style: none;
+    font-family: sans-serif;
 
 }
 
@@ -221,6 +222,7 @@ ul, li{
     justify-content: center;
     align-items: start;
     height: 100%;
+    
 }
 
 .buttons{
@@ -271,7 +273,7 @@ ul, li{
     height: calc(100% - 70px);
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
 
     align-items: start;
     justify-content: center;
@@ -288,17 +290,14 @@ ul, li{
         margin-left: 7%;
         display: flex;
     justify-content: center;
-    margin-top: 20px;
     align-items: start;
     }
     .characterimg img{
         width: 90%;
         height: 90%;
         object-fit: contain;
-    
         min-width: 140px;
-        position: sticky;
-        top: 90px;
+        margin-top: 25px;
     
     }
 
@@ -357,7 +356,6 @@ ul, li{
         transform: translateX(-50%);
         background-image: url('/src/leftinner.svg');
         filter: invert(79%) sepia(81%) saturate(826%) hue-rotate(180deg) brightness(100%) contrast(89%);
-    
         max-width: 30px;
         min-width: 15px;
         width: 3%;
@@ -682,8 +680,8 @@ ul, li{
     .container .gallery li{width:100%;}
     .gallery li{padding:0;margin:0 0 6px 0;}
     .docs{
-        width: calc(100vw - 64px);
-        height: calc(100vh - 100px);
+        width: calc(100vw - 40px);
+        height: calc(100vh - 120px);
     }
 
 
@@ -738,14 +736,16 @@ ul, li{
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 54px;
-    margin-bottom: -50px;
+    margin-bottom: -45px;
     }
 
     .characterimg img{
         width: 95%;
         height: 95%;
         object-fit: contain;
-        min-width: 270px;    
+        min-width: 270px;   
+        margin-top: 20px;
+ 
     }
 
     .description, .characterdescription{

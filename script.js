@@ -1,6 +1,10 @@
 import data from './data.js';
 
 
+
+
+
+
 const gun = document.getElementsByClassName("gun");
 const boom = document.getElementsByClassName("boom");
 const boomImageList = ["./src/boom1.png", "./src/boom2.png", "./src/boom3.png", "./src/boom4.png", "./src/boom5.png", "./src/boom6.png", "./src/boom7.png", "./src/boom8.png", "./src/boom9.png", "./src/boom10.png"]
@@ -16,6 +20,11 @@ const docscolumnleft = document.querySelector('.docs-column-left');
 const docscolumncenter = document.querySelector('.docs-column-center');
 const docscolumnright = document.querySelector('.docs-column-right');
 let currentIndex = 0;
+
+for (var i = 0; i < boomImageList.length; i++) {
+    var img = new Image();
+    img.src = boomImageList[i];
+}
 
 
 
