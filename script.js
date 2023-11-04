@@ -12,6 +12,12 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const slideWidth = document.querySelector('.future').clientWidth;
 
+const docscolumnleft = document.querySelector('.docs-column-left');
+const docscolumncenter = document.querySelector('.docs-column-center');
+const docscolumnright = document.querySelector('.docs-column-right');
+let currentIndex = 0;
+
+
 
 content.addEventListener("click", function(event) {
     const x = event.pageX
@@ -31,7 +37,7 @@ content.addEventListener("click", function(event) {
     let boomImageSrc = boomImageList[Math.floor(Math.random() * boomImageList.length)]
     const boomImage = document.createElement('img');
     boomImage.src = boomImageSrc
-    boomImage.style.width = 240 + "px"
+    boomImage.style.width = 260 + "px"
     boomImage.style.height = "auto"
     boomImage.style.left = (x - 100)+ "px";
     boomImage.style.top = (y - 110)  + "px";
@@ -41,10 +47,30 @@ content.addEventListener("click", function(event) {
 /*rotate cards*/
 const gallery = document.querySelector('.gallery');
 const items = gallery.querySelectorAll('li');
-items.forEach(item => {
-    const randomAngle = Math.floor(Math.random() * 0);
-    item.style.transform = `rotate(${randomAngle}deg)`;
-});
+
+if (window.innerWidth <= 768) {
+    items.forEach((item, index) => {
+        let randomAngle;
+        if (index === 0) {
+            randomAngle = 0;
+        } else {
+            randomAngle = Math.random() * 4 - 2;
+        }
+        item.style.transform = `rotate(${randomAngle}deg)`;
+    });
+}
+else {
+    items.forEach((item, index) => {
+        let randomAngle;
+        if (index === 0) {
+            randomAngle = 0;
+        } else {
+            randomAngle = Math.random() * 2 - 1;
+        }
+        item.style.transform = `rotate(${randomAngle}deg)`;
+    });
+}
+
 
 
 /*close docs*/
@@ -66,13 +92,18 @@ docsNav.addEventListener("click", function(event) {
     characterdescription.innerHTML = textcharacterdescription
     charactername.innerHTML = textcharactername
     characterimg.innerHTML = textcharacterimg
+    docscolumnleft.style.filter = 'invert(34%) sepia(58%) saturate(535%) hue-rotate(120deg) brightness(93%) contrast(90%)'
+    docscolumncenter.style.filter = 'invert(79%) sepia(81%) saturate(826%) hue-rotate(180deg) brightness(100%) contrast(89%)'
+    docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
+    docs.style.backgroundColor = "#F4F0E9"
+    docsNav.style.backgroundColor = "#F4F0E9"
 
 
     setTimeout(function() {
 
     docs.style.display = "none"
     textBg.style.display = "none"
-    }, 400)
+    }, 300)
 
 })
 textBg.addEventListener("click", function(event) {
@@ -90,11 +121,18 @@ textBg.addEventListener("click", function(event) {
     charactername.innerHTML = textcharactername
     characterimg.innerHTML = textcharacterimg
 
+    docscolumnleft.style.filter = 'invert(34%) sepia(58%) saturate(535%) hue-rotate(120deg) brightness(93%) contrast(90%)'
+    docscolumncenter.style.filter = 'invert(79%) sepia(81%) saturate(826%) hue-rotate(180deg) brightness(100%) contrast(89%)'
+    docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
+    docs.style.backgroundColor = "#F4F0E9"
+    docsNav.style.backgroundColor = "#F4F0E9"
+
+
     setTimeout(function() {
 
     docs.style.display = "none"
     textBg.style.display = "none"
-    }, 400)
+    }, 300)
 
 })
 
@@ -169,10 +207,7 @@ listItems.forEach(function(item, index) {
 
 
 
-const docscolumnleft = document.querySelector('.docs-column-left');
-const docscolumncenter = document.querySelector('.docs-column-center');
-const docscolumnright = document.querySelector('.docs-column-right');
-let currentIndex = 0;
+
 
 //슬라이드 넘기기
 
@@ -186,14 +221,17 @@ let currentIndex = 0;
             nextBtn.style.visibility = 'hidden'
             prevBtn.style.visibility = 'visible'
 
-            docscolumnleft.style.filter = 'invert(82%) sepia(10%) saturate(2466%) hue-rotate(4deg) brightness(92%) contrast(80%)'
-            docscolumncenter.style.filter = 'invert(74%) sepia(4%) saturate(4989%) hue-rotate(184deg) brightness(90%) contrast(84%)'
-            docscolumnright.style.filter = 'invert(40%) sepia(52%) saturate(1280%) hue-rotate(294deg) brightness(96%) contrast(96%)'
+            docscolumnleft.style.filter = 'invert(20%) sepia(7%) saturate(2971%) hue-rotate(11deg) brightness(94%) contrast(79%)'
+            docscolumncenter.style.filter = 'invert(31%) sepia(24%) saturate(269%) hue-rotate(161deg) brightness(98%) contrast(90%)'
+            docscolumnright.style.filter = 'invert(40%) sepia(7%) saturate(2013%) hue-rotate(276deg) brightness(93%) contrast(88%)'
 
             characterdetail.innerHTML = textcaption
             characterdescription.innerHTML = textdescription 
             charactername.innerHTML = textname
             characterimg.innerHTML = textphoto
+
+            docs.style.backgroundColor = "#A5A3A0"
+            docsNav.style.backgroundColor = "#A5A3A0"
 
         }
 
@@ -206,14 +244,19 @@ let currentIndex = 0;
             nextBtn.style.visibility = 'visible'
             prevBtn.style.visibility = 'hidden'
 
-            docscolumnleft.style.filter = 'invert(93%) sepia(98%) saturate(5244%) hue-rotate(330deg) brightness(101%) contrast(101%)'
-            docscolumncenter.style.filter = 'invert(76%) sepia(6%) saturate(1243%) hue-rotate(184deg) brightness(111%) contrast(103%)'
-            docscolumnright.style.filter = 'invert(71%) sepia(62%) saturate(215%) hue-rotate(299deg) brightness(103%) contrast(101%)'
+            docscolumnleft.style.filter = 'invert(34%) sepia(58%) saturate(535%) hue-rotate(120deg) brightness(93%) contrast(90%)'
+            docscolumncenter.style.filter = 'invert(79%) sepia(81%) saturate(826%) hue-rotate(180deg) brightness(100%) contrast(89%)'
+            docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
+
            
             characterdetail.innerHTML = textcharacterdetail
             characterdescription.innerHTML = textcharacterdescription
             charactername.innerHTML = textcharactername
             characterimg.innerHTML = textcharacterimg
+            docs.style.backgroundColor = "#F4F0E9"
+            docsNav.style.backgroundColor = "#F4F0E9"
+
+
         }
     });
 
