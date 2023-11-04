@@ -132,6 +132,8 @@ body:active{
     margin-left: 0;
     background-image: url('/src/left_column.svg');
 }
+
+
 #rightColumn{
     margin-right: 0;
     background-image: url('/src/right_column.svg');
@@ -675,7 +677,7 @@ ul, li{
         gap: 8px;
     }
     .gallery{
-        margin: 158px 52px;
+        margin: 158px 52px 50px;
     }
     .column > div{
         width: 32px;
