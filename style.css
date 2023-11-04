@@ -648,6 +648,7 @@ ul, li{
         justify-content: center;
         height: 160px;
         flex-direction: column;
+        background-color: #F5F0E9;
     }
     #ntm{
         height: 50%;
