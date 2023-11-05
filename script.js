@@ -150,11 +150,7 @@ textBg.addEventListener("click", function(event) {
 })
 
 const audio = document.getElementById("audio");
-const audioa = document.getElementById("audioa");
-const audiob = document.getElementById("audiob");
-const audioc = document.getElementById("audioc");
-const audiod = document.getElementById("audiod");
-const audios = [audio, audioa, audiob, audioc, audiod]
+const audios = [audio]
 
 
 /*fill docs*/
