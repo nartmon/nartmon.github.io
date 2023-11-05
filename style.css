@@ -1,4 +1,4 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');body{
     margin: 0;
     height: auto;
     background-image: url(./src/bg.svg);
@@ -7,8 +7,8 @@ body{
     --margin: 60px ;
     cursor: url('./src/aim3.png') 40 40, auto;
     -ms-overflow-style: none;
-    font-family: sans-serif;
-
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +52,7 @@ body:active{
     height: 50%;
     margin-right: 60px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 19px;
     letter-spacing: .1px;
     hyphens: auto;
@@ -507,7 +507,7 @@ ul, li{
         height: 50%;
         margin-right: 60px;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 19px;
         letter-spacing: .1px;
         hyphens: auto;
@@ -585,7 +585,7 @@ ul, li{
         margin-left: 16px;
         text-align: left;
         letter-spacing: 0.1px;
-        font-weight: 500;
+        font-weight: 400;
         word-spacing: -.4px;
         font-size: 13px;
         line-height: 17.5px;
@@ -678,18 +678,18 @@ ul, li{
     #ntm{
         height: 51%;
         margin-left: -1px;
-        margin-bottom: 6px;
+        margin-bottom: 5.5px;
         margin-top: 15px;
     }
     #titleMessage{
         height: calc(50% + 12px);
         margin-left: 30px;
         text-align: center;
-        letter-spacing: 0.25px;
+        letter-spacing: 0.2px;
         font-weight: 500;
         opacity: .87;
-        word-spacing: -.4px;
-        font-size: 13px;
+        word-spacing: -.2px;
+        font-size: 12.8px;
         line-height: 16px;
         margin-right: 30px;
     }
