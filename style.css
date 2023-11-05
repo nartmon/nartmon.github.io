@@ -131,7 +131,10 @@ body:active{
 #leftColumn{
     margin-left: 0;
     background-image: url('/src/left_column.svg');
+    
+    
 }
+
 
 
 #rightColumn{
@@ -646,16 +649,20 @@ ul, li{
 
 
 @media (max-width:480px){
+    body{
+        height: 100vh;
+    }
     .header{
         justify-content: center;
         height: 160px;
         flex-direction: column;
-        background-color: #F5F0E9;
+        position: fixed;
+        z-index: 88;
     }
     #ntm{
         height: 50%;
-        margin-left: 0px;
-        margin-bottom: 4px;
+        margin-left: -1px;
+        margin-bottom: 5px;
         margin-top: 16px;
     }
     #titleMessage{
@@ -666,7 +673,7 @@ ul, li{
         font-weight: 500;
         word-spacing: -.4px;
         font-size: 13.5px;
-        line-height: 17px;
+        line-height: 16px;
         margin-right: 30px;
     }
 
@@ -675,12 +682,14 @@ ul, li{
         left: 11px;
         top: 185px;
         gap: 8px;
+        position: fixed;
     }
     .gallery{
         margin: 158px 52px 50px;
     }
     .column > div{
         width: 32px;
+        z-index: 89;
     }
     .container .gallery li{width:100%;}
     .gallery li{padding:0;margin:0 0 6px 0;}
