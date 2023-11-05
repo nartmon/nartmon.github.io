@@ -529,11 +529,11 @@ ul, li{
         width: 50%;
         margin-left: 7%;
         margin-right: 0%;
-        margin-top: 80px;    
+        margin-top: 56px;    
 }
 
     .characterimg img{
-        width: 90%;
+        width: 100%;
         height: 100%;
         object-fit: contain;       
     
@@ -567,6 +567,7 @@ ul, li{
         margin: 140px 45px;
 
     }
+
     .sponsorLogo{
         left: 10px;
         top: 156px;
@@ -651,6 +652,17 @@ ul, li{
 
 
 @media (max-width:480px){
+
+    .headerBg{
+        width: 100%;
+        height: 130px;
+        background-color: #F5F0E9;
+        top:0;
+        margin:0;
+        position: fixed;
+        z-index: 99;
+
+    }
     body{
         height: 100vh;
     }
@@ -660,7 +672,9 @@ ul, li{
         flex-direction: column;
         position: fixed;
         z-index: 100;
+        
     }
+
     #ntm{
         height: 51%;
         margin-left: -1px;
