@@ -48,8 +48,8 @@ content.addEventListener("click", function(event) {
     boomImage.src = boomImageSrc
     boomImage.style.width = 260 + "px"
     boomImage.style.height = "auto"
-    boomImage.style.left = (x - 100)+ "px";
-    boomImage.style.top = (y - 110)  + "px";
+    boomImage.style.left = (x - 130)+ "px";
+    boomImage.style.top = (y - 140)  + "px";
     boom[0].appendChild(boomImage);
 });
 
