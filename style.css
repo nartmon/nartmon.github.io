@@ -749,7 +749,7 @@ ul, li{
 
     
     .slide > div{
-        height: calc(100% - 60px);2
+        height: calc(100% - 60px);
         margin-top: 0px;
         flex-direction: column;
         align-items: center;

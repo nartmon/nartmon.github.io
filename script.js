@@ -106,7 +106,8 @@ docsNav.addEventListener("click", function(event) {
     docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
     docs.style.backgroundColor = "#F4F0E9"
     docsNav.style.backgroundColor = "#F4F0E9"
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
 
 
 
@@ -137,7 +138,8 @@ textBg.addEventListener("click", function(event) {
     docscolumnright.style.filter = 'invert(77%) sepia(59%) saturate(1932%) hue-rotate(329deg) brightness(97%) contrast(87%)'
     docs.style.backgroundColor = "#F4F0E9"
     docsNav.style.backgroundColor = "#F4F0E9"
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'auto';
 
 
 
