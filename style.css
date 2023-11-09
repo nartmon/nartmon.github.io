@@ -56,7 +56,7 @@ body:active{
     line-height: 19px;
     letter-spacing: .1px;
     hyphens: auto;
-    z-index: 100;
+    z-index: 80;
     color:#616161;
 
 }
