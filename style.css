@@ -38,6 +38,7 @@ body:active{
     max-height: 140px;
     height: 8vw;
     pointer-events: none;
+    z-index: 50;
 }
 
 #ntm{
@@ -254,12 +255,16 @@ ul, li{
     background-repeat:  no-repeat;
     margin: 15px;
     background-color: rgba(255,255,255,0);
-    cursor: url('./src/aim2.png') 40 40, auto;
+    cursor: url('./src/aim3.png') 40 40, auto;
 }
 
 .prev-btn:hover, .prev-btn:active, .next-btn:hover, .next-btn:active{
     opacity: 1;
 
+}
+
+.prev-btn:active, .next-btn:active{
+    cursor: url('./src/aim4.png') 40 40, auto;
 }
 
 .next-btn {
